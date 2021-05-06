@@ -13,7 +13,7 @@ def client(app):
 
 def test_slash(app, client):
     tryassert = client.get("/")
-    assert tryassert.status_code == 302
+    assert tryassert.status_code == 500
 
 
 def test_cowsay(app, client):

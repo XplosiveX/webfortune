@@ -1,9 +1,13 @@
 import flask
 from flask import render_template, request, session, redirect, url_for, jsonify, abort
 import os
+def generatekey(){
+    createno = os.urandom(24)   
+    return createno
+}
 
 app = flask(__name__)
-
+app.secret_key = generatekey()
 ##tests to make sure files exist.
 try:
     cow = open("cowsay.txt")

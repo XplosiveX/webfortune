@@ -2,13 +2,10 @@ import flask
 from flask import render_template, request, session, redirect, url_for, jsonify, abort
 import os
 import uuid
-def generatekey(){
-    createno = uuid.uuid4().hex
-    return createno
-}
 
 app = flask(__name__)
-app.secret_key = generatekey()
+app.secret_key = uuid.uuid4().hex
+
 ##tests to make sure files exist.
 try:
     cow = open("cowsay.txt")

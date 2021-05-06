@@ -5,10 +5,20 @@ app = Flask(__name__)
 
 ##tests to make sure files exist.
 try:
-    f = open("filename.txt")
+    cow = open("cowsay.txt")
+    fortune = open("fortune.txt")
+    cow.close()
+    fortune.close()
     # Do something with the file
 except:
-    print("File not accessible")
+    try:
+        open("cowsay.txt", "x")
+    except:
+        pass
+    try:
+        open("fortune.txt", "x")
+    except:
+        pass
 returnvalue = ""
 #this is supposed to load an index.html and render
 ##@app.route('/')

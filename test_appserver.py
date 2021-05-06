@@ -17,7 +17,7 @@ def test_slash(app, client):
 
 
 def test_cowsay(app, client):
-    message = "Complete!!"
+    collect = "Complete!!"
     tryassert = client.get("/cowsay/%s/" % collect)
     assert tryassert.status_code == 200
     realconnect = tryassert.get_data(as_text=True)

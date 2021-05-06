@@ -3,7 +3,7 @@ import os
 import subprocess
 import uuid 
 
-app = Flask("web_fortune")
+app = Flask(__name__)
 app.secret_key = str(uuid.uuid4().hex)
 
 @app.route('/')

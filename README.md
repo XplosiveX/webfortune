@@ -4,7 +4,6 @@
 `virtualenv`
 `cowsay`
 `fortune`
-`docker`
 
 ### Setup
 All commands below assume you have already cloned the repo.

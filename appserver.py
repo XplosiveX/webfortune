@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-
+#this is supposed to load an index.html and render
 @app.route('/')
 def hello():
     return render_template('index.html', title='Welcome', members=users)

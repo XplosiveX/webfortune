@@ -1,8 +1,9 @@
 import flask
 from flask import render_template, request, session, redirect, url_for, jsonify, abort
 import os
+import uuid
 def generatekey(){
-    createno = os.urandom(24)   
+    createno = uuid.uuid4().hex
     return createno
 }
 

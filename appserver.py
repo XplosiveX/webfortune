@@ -1,8 +1,8 @@
 import flask
-from flask import Flask, render_template, request, session, redirect, url_for, jsonify, abort
+from flask import render_template, request, session, redirect, url_for, jsonify, abort
 import os
 
-app = Flask(__name__)
+app = flask(__name__)
 
 ##tests to make sure files exist.
 try:

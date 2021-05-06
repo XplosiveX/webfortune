@@ -1,3 +1,4 @@
+![example workflow](https://github.com/XplosiveX/webfortune/actions/workflows/python-test.yml/badge.svg)
 ### Required Libaries to run on local host
 `python3`
 `pip3`

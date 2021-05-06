@@ -13,7 +13,7 @@ def index():
 @app.route('/fortune/')
 def fortunenormal():
     fortune = subprocess.check_output(["fortune"]).decode()
-    prereturn = "<pre>" + fortun + "</pre>"
+    prereturn = "<pre>" + fortune + "</pre>"
     return prereturn
 
 @app.route('/cowsay/<message>/')

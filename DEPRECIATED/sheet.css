@@ -1,0 +1,11 @@
+pre {
+border:black solid 4px;
+border-radius: 12.5px;
+background:silver; 
+opacity: 0.95;
+margin-left:auto;
+margin-right:auto;
+width:600px;
+height:560px;
+overflow:auto;
+}

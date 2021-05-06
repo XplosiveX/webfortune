@@ -11,11 +11,6 @@ def client(app):
     return app.test_client()
 
 
-def test_slash(app, client):
-    tryassert = client.get("/")
-    assert tryassert.status_code == 500
-
-
 def test_cowsay(app, client):
     collect = "Complete!!"
     tryassert = client.get("/cowsay/%s/" % collect)

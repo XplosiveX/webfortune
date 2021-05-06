@@ -1,4 +1,4 @@
-
+import pytest
 from appserver import app as flask_app
 ##from appserver import fortune, cowsay, cowfortune
 import os
